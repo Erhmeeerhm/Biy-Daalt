@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="mugenTrain.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer: Mugen Train</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" class="logo"><img src="logo.png" alt=""></a>
+        <div class="toggle"><a href="/index.html/sidebar-wrapper/sidebar-nav"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Demon Slayer: Mugen Train</span></h2>
+            <p>
+                Мүгэн галт тэрэгнээс 40-өөд хүн ор сураггүй алга болно. Үүний учрыг мөрдөх ёстой баг явуулахч мөн бусдын
+                адил ор сураггүй алга болов. Хэрэг явдалын учрыг тайлуулахаар залуу Чөтгөрийн ангуучдыг явуулах бөгөөд
+                тус бүрэлдэхүүнд. Танжиро, Иносүкэ, Зэницү, Нэзүко багтана. Галт тэрэгт орж ирснийхээ дараагаар тэд
+                Галын хашира болох Кёожүро Рэнгокүтэй таарснаар үйл явдал өрнөх болно.
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch trailer</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="mugen.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            let video = document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>

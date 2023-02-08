@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="godzilla.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godzilla: Planet of the Monsters</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" class="logo"><img src="logo.png" alt=""></a>
+        <div class="toggle"><a href="/index.html/sidebar-wrapper/sidebar-nav"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Godzilla: Planet of the Monsters</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, expedita obcaecati ullam voluptatibus sunt suscipit at neque aperiam quia soluta.
+            </p>
+
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch trailer</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="zilla.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            let video = document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>

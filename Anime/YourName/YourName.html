@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="YourName.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" class="logo"><img src="logo.png" alt=""></a>
+        <div class="toggle"><a href="/sidebar-nav"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Your Name</span></h2>
+            <p>
+                Макото Шинкай найруулагчийн хамгийн сүүлийн, хамгийн их хүлээлттэй бүтээл болох "Тэнгэр Цэлмүүлэгч
+                охин".
+                Үйл явдал
+                Ходока Моришима гэх ахлах сургуулын хүү гэрээсээ зугтан Токёод ирэх болно.Токиод бороо байнга орж
+                зогсолтгүй үргэжилэх бөгөөд бороо орохыг зогсоож чадах Хина гэх тэнгэр цэлмүүлэгч охинтой танилцана.
+                Зөвхөн тэр хоёрын мэдэх ертөнцийн нууц юунд хүргэх бол?
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch trailer</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="kimino.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            let video = document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>

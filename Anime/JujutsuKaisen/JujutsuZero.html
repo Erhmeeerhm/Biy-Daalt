@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="jujutsuZero.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujutsu Kaisen: Movie Zero</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" class="logo"><img src="logo.png" alt=""></a>
+        <div class="toggle"><a href="/index.html/sidebar-wrapper/sidebar-nav"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Jujutsu Kaisen: Movie Zero</span></h2>
+            <p>
+                Юүүта Оккоцүт хараал шүгэлсэн бөгөөд бага байхад нь түүний эмэгтэй найз Рика нүднийх нь өмнө автын
+                ослоор өөд болж түүнийг хараасан. Хараал болсон Рика аймшигт хүчирхэг чөтгөр болох бөгөөд Юүүтаг бага
+                наснаас нь хамгаалж ирсэн нэгэн юм. Рикагийн хэрцгий төлөвийг дарж чадахгүйд хүрсэн Юүүтад Хар шидийн
+                сургууль туслахаар ирэх бөгөөд Саторү Гожоү өөрийн доор авч ангид оруулна. Тэрбээр нэг ангид Маки Зэнин,
+                Тогэ Инүмаки, Панда гуравтай нэг ангийнхан болж хараалыг удирдаж сурахад хичээллэнэ. Гэвч Юүүтад буй
+                хүчирхэг хараал болох Рикаг өөрийн болгож авахыг туйлын их хүсэх хүмүүс гарч ирэх бөгөөд ингэснээр үйл
+                явдал өрнөх юм.
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch trailer</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="zero.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            let video = document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>

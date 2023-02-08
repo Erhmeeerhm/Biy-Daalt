@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="BleachM4.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleach Movie 4: Hell Verse</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" class="logo"><img src="logo.png" alt=""></a>
+        <div class="toggle"><a href="/index.html/sidebar-wrapper/sidebar-nav"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Bleach Movie 4: Hell Verse</span></h2>
+            <p>
+                "Там" бол амьд сэрүүн байхдаа хүчирхийллийн гэмт хэрэг үйлдсэн хүнийг илгээдэг газар юм. Шинигами тийшээ
+                явахыг хориглодог. Нэгэн өдөр хоригдлууд бослого гаргаж, Ичиго болон түүний найзуудын амьдардаг Каракура
+                буюу жинхэнэ ертөнц рүү оргон зугтав. Ичиго болон түүний найзууд хоригдлуудад ар араасаа ялагдаж, асар
+                их хүчээр ялагдана. Тэднийг аврахаар ирсэн нууцлаг хүн гарч ирнэ. Кокутоу тэргүүлж, Ичиго, Рукиа, Урюү,
+                Ренжи нар дэлхийг аврахаар там руу алхлаа.
+
+                Жич: Bleach киноны 299-р анги нь энэ киноны оршил болж байна.
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch trailer</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="m4.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            let video = document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>

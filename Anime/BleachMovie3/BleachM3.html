@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="BleachM3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleach Movie 3: Fade to Black</title>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" class="logo"><img src="logo.png" alt=""></a>
+        <div class="toggle"><a href="/index.html/sidebar-wrapper/sidebar-nav"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Bleach Movie 3: Fade to Black</span></h2>
+            <p>
+                Нууцлаг хосууд Рукиа Кучики руу дайрч, түүнийг Сейрэйтэйд байхад нь дурсамжийг нь арилгасны дараа Сүнс
+                хураагчийг орлон тоглогч Ичиго Куросаки Рукияг хэсэгхэн зуур мартсан бөгөөд түүнийг Андерпод Мод-Сүнс
+                Кон түүнийг сануулах хүртэл. Бухимдсан тэрээр хотынхоо чихрийн дэлгүүрийн эзэн Кисуке Урахараг хайж,
+                тэдэнд Сейрэйтэй хүрэх замыг нээж өгдөг. Дараа нь Ичиго Сүнс нийгэмлэгийн Шинигами болох Сэйрэйтэй дэх
+                түүний холбоотнууд түүнийг мартсанд цочирдов.
+
+                Үйлдлээр дүүрэн Кими но На во Ёбу Ичиго, Кон хоёрыг даган хуучин нөхдийнхөө эсрэг тулалдаж, сураггүй
+                болсон Рукиаг хайж, түүнийг дайрсан этгээдүүдийг дахин цохихоос нь өмнө олж мэдэв.
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch trailer</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="m3.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            let video = document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>
